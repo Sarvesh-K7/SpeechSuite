@@ -2,8 +2,7 @@
 
 A full-stack web app that transcribes speech in real time — including
 code-mixed Hindi + English — and converts text back into natural-sounding
-speech. Built as a submission for the Procucev AI Tech hiring assignment
-(Assignment 1: Real-time Transcription).
+speech.
 
 Live demo: **[add your deployed URL here]**
 
