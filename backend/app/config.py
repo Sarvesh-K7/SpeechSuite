@@ -15,6 +15,12 @@ class Config:
         "DATABASE_URL",
         f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}",
     )
+    SQLALCHEMY_ENGINE_OPTIONS = {
+    "connect_args": {
+        "ssl": {}
+    }
+}
+
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # ---- Speech-to-Text ----
