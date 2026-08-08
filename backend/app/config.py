@@ -50,4 +50,12 @@ class Config:
     MAX_CONTENT_LENGTH = 25 * 1024 * 1024  # 25 MB max upload
 
     # CORS - allow the Vite dev server / deployed frontend origin
-    CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:5173").split(",")
+    # CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:5173").split(",")
+    CORS_ORIGINS = [
+        origin.strip()
+        for origin in os.environ.get(
+            "CORS_ORIGINS",
+            "http://localhost:5173"
+        ).split(",")
+        if origin.strip()
+    ]
