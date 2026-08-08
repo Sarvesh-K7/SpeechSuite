@@ -4,7 +4,7 @@ A full-stack web app that transcribes speech in real time — including
 code-mixed Hindi + English — and converts text back into natural-sounding
 speech.
 
-Live demo: **[add your deployed URL here]**
+Live demo: 
 
 ## What it does
 
