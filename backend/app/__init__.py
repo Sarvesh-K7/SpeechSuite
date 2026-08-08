@@ -20,14 +20,14 @@ def create_app():
 
     # CORS(app, origins=app.config["CORS_ORIGINS"], supports_credentials=True)
     CORS(
-    app,
-    resources={
-        r"/api/*": {
-            "origins": app.config["CORS_ORIGINS"]
-        }
-    },
-    supports_credentials=True,
-)
+        app,
+        resources={
+            r"/api/*": {
+                "origins": app.config["CORS_ORIGINS"]
+            }
+        },
+        supports_credentials=True,
+    )
 
     db.init_app(app)
     with app.app_context():
